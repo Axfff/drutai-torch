@@ -141,16 +141,7 @@ def sm_target_interaction(
         model_fp=model_fp,
         sv_fpn=sv_fpn,
     )
-    s = [
-        'AlexNet',
-        'BiRNN',
-        'RNN',
-        'Seq2Seq',
-    ]
-    if method in s:
-        drutai_p.m1()
-    else:
-        drutai_p.m2()
+    drutai_p.predict()
 
 
 if __name__ == '__main__':
